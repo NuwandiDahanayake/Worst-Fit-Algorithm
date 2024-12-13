@@ -1,7 +1,5 @@
 class MemoryBlock:
-    """
-    Represents a memory block with an ID and size.
-    """
+     
     def __init__(self, block_id, size):
         self.block_id = block_id
         self.size = size
@@ -11,13 +9,7 @@ class MemoryBlock:
 
 
 def worst_fit_allocate(memory_blocks, request_size):
-    """
-    Allocates memory using the Worst Fit algorithm.
-
-    :param memory_blocks: List of MemoryBlock objects representing available memory blocks.
-    :param request_size: Size of memory requested.
-    :return: True if allocation is successful, False otherwise.
-    """
+     
     largest_idx = -1
     largest_size = -1
 
@@ -44,11 +36,7 @@ def worst_fit_allocate(memory_blocks, request_size):
 
 
 def display_memory_blocks(memory_blocks):
-    """
-    Displays the current state of memory blocks.
-
-    :param memory_blocks: List of MemoryBlock objects representing available memory blocks.
-    """
+     
     if not memory_blocks:
         print("No available memory blocks.")
     else:
